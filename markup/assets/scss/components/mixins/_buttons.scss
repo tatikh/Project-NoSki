@@ -1,10 +1,10 @@
-@mixin button-size( $padding-vertical,  $padding-horizontal)
+@mixin button-size ($padding-vertical,  $padding-horizontal)
  {
   padding: $padding-vertical $padding-horizontal;
 }
 
 
-@mixin button-variant($color: $text-color-inverse, $bg-color: $bleck-base, $border: none) 
+@mixin button-variant ($color: $text-color-inverse, $bg-color: $black-base, $border: none) 
 {
   color: $color;
   background-color: $bg-color;

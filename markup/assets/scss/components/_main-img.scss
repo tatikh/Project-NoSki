@@ -49,7 +49,7 @@
 }
 
 .name-collection{
-	@include name-collection();
+	@include name-collection;
 		&-top{
 			@include name-collection-variant (46.1%,53.5%);
 		}

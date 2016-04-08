@@ -1,20 +1,19 @@
 
 //== Colors
-<<<<<<< HEAD
-$bleck-base:              #000 !default;
-$bleck-light:             lighten($bleck-base, 46.7%) !default; // #777
-$bleck-lighter:           lighten($bleck-base, 97.5%) !default; // #eee
+$black-base:              #000 !default;
+$black-light:             lighten($black-base, 46.7%) !default; // #777
+$black-lighter:           lighten($black-base, 97.5%) !default; // #eee
 $white: 				#fff !default; 
 
 //== Scaffolding
 $body-bg:              	 	#fff !default;
-$footer-bg:              	 $bleck-base !default;
-$text-color-base:            $bleck-base !default;
+$footer-bg:              	 $black-base !default;
+$text-color-base:            $black-base !default;
 $text-color-inverse:		$white !default;
-$text-color-second:          $bleck-light !default;
-$link-color:             	 $bleck-base !default;
-$link-hover-color:      	lighten($bleck-base, 15%) !default;
-=======
+$text-color-second:          $black-light !default;
+$link-color:             	 $black-base !default;
+$link-hover-color:      	lighten($black-base, 15%) !default;
+//=======
 $black-base:              #000 !default;
 $black-light:             lighten($black-base, 46.7%) !default; // #777
 $black-lighter:           lighten($black-base, 97.5%) !default; // #eee
@@ -26,7 +25,6 @@ $text-color-base:            $black-base !default;
 $text-color-second:          $black-light !default;
 $link-color:             	 $black-base !default;
 $link-hover-color:      	lighten($black-base, 15%) !default;
->>>>>>> c0172991d80baff83e4d98bb69939e893a40cc27
 $link-hover-decoration: 	underline !default;
 
 //== Typography

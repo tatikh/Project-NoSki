@@ -12,10 +12,10 @@
   border: 1px solid transparent;
   white-space: nowrap;
   &:hover {
-    background-color: $bleck-light;
+    background-color: $black-light;
     @include link-notunderline;
   }
-  &-card {
+  &-cart {
    @include button-size (26px, 46px);
    @include button-variant() ;
    margin-bottom: 100px;
