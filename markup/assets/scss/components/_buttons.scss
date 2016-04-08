@@ -1,0 +1,23 @@
+@import 'mixins/buttons';
+
+.button {
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-family: $btn-font-family;
+  font-size: $btn-font-size;
+  background-image: none; 
+  border: 1px solid transparent;
+  white-space: nowrap;
+  &:hover {
+    background-color: $bleck-light;
+    @include link-notunderline;
+  }
+  &-card {
+   @include button-size (26px, 46px);
+   @include button-variant() ;
+   margin-bottom: 100px;
+  }
+ }

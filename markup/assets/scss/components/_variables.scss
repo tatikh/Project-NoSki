@@ -3,11 +3,13 @@
 $bleck-base:              #000 !default;
 $bleck-light:             lighten($bleck-base, 46.7%) !default; // #777
 $bleck-lighter:           lighten($bleck-base, 97.5%) !default; // #eee
+$white: 				#fff !default; 
 
 //== Scaffolding
 $body-bg:              	 	#fff !default;
 $footer-bg:              	 $bleck-base !default;
 $text-color-base:            $bleck-base !default;
+$text-color-inverse:		$white !default;
 $text-color-second:          $bleck-light !default;
 $link-color:             	 $bleck-base !default;
 $link-hover-color:      	lighten($bleck-base, 15%) !default;
@@ -38,6 +40,10 @@ $headings-font-family:    inherit !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
+
+//buttons
+$btn-font-family: 		$font-family-base;
+$btn-font-size:         ceil(($font-size-base * 1.42857)) !default; // ~20px
 
 
 

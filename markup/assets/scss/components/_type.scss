@@ -70,8 +70,11 @@ h4, .h4 { font-size: $font-size-h4}
 .text-uppercase      { text-transform: uppercase; }
 .text-capitalize     { text-transform: capitalize; }
 
-.link-notunderline{
+@mixin link-notunderline() {
   text-decoration: none;
+}
+.link-notunderline{
+  @include link-notunderline;
 }
 
 // Lists
