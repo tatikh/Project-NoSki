@@ -89,7 +89,6 @@ gulp.task('watch', function() {
     watch(markupPaths.js, function() {
         gulp.start('js');
     });
-    watch(markupPaths.js, function() {
         gulp.start('images');
     });
 });
