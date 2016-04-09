@@ -37,7 +37,9 @@ $font-size-md:         	ceil(($font-size-base * 0.9643)) !default; // ~13.5px
 $font-size-sm:         	ceil(($font-size-base * 0.7143)) !default; // ~10px
 
 $font-size-h1:            floor(($font-size-base * 2.571)) !default; // ~36px
+$font-size-h1-sm:            floor(($font-size-base * 1.286)) !default; // ~18px
 $font-size-h4:            ceil(($font-size-base * 1.2857)) !default; // ~18px
+$font-size-h4-sm: 			$font-size-base; 
 // $font-size-h2:            floor(($font-size-base * 2.143)) !default; // ~30px
 // $font-size-h3:            ceil(($font-size-base * 1.715)) !default; // ~24px
 // $font-size-h5:            $font-size-base !default;
@@ -49,7 +51,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-weight:    700 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 

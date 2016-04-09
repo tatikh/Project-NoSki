@@ -1,6 +1,6 @@
-@mixin main-block-img($width, $left: 0, $margin-top: 0) {
+@mixin main-block-img($width, $left: 0, $margin-top: 0, $position: relative) {
 	width: $width;
 	left: $left;
 	margin-top: $margin-top;
-	position:relative;
+	position: $position;
 }
