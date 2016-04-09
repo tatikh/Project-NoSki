@@ -1,0 +1,63 @@
+@import 'mixins/main-block-img';
+@import 'mixins/name-collection';
+
+.main{
+	max-width: 1920px;
+	// background-image: url(../../images/content/main-bg1.jpg), url(../../images/content/main-bg2.jpg), url(../../images/content/main-bg3.jpg);
+	// background-position: 8.57% 7.63%, 83.4% 50.9%, 33.7% 79.24%; // 131px  193px, 1305px 1175px, 408px 1822px
+	// background-repeat: no-repeat, no-repeat, no-repeat;
+	// background-size: 6.5% auto, 4.7% auto, 3.3% auto;
+}
+
+.main-img{
+	width: 100%;
+	height: auto;
+	padding-bottom: 16.36%; //250px
+}
+
+.main-block{
+	max-width: 1528px;
+	padding: 0 12.83%; //196px
+	padding-bottom: 11.71%; //179px
+	background-image: url(../../images/content/main-bg1.jpg), url(../../images/content/main-bg2.jpg), url(../../images/content/main-bg3.jpg);
+	background-position: 8.57% 7.63%, 83.4% 50.9%, 33.7% 79.24%; // 131px  193px, 1305px 1175px, 408px 1822px
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: 6.5% auto, 4.7% auto, 3.3% auto;
+		h1{
+			margin-top: 0;
+			margin-bottom: 3%; //46px
+		}
+}
+
+.block-img {
+	&-top{
+		@include main-block-img  (32.1%, 68.06%);
+	}
+	&-middle-bottom{
+		@include main-block-img  (29.52%, 19.5%, -8%);
+	}
+	&-middle-top{
+		@include main-block-img  (27.49%, 0, -23.3%);
+	}
+	&-bottom{
+		@include main-block-img  (32.1%, 50.7%, -1%);
+	}
+}
+
+.collection{
+	position: relative;
+}
+
+.name-collection{
+	@include name-collection;
+		&-top{
+			@include name-collection-variant (46.1%,53.5%);
+		}
+		&-middle{
+			@include name-collection-variant (49.3%,40.8%);
+		}
+		&-bottom{
+			@include name-collection-variant (78.5%,43.5%);
+		}
+}
+

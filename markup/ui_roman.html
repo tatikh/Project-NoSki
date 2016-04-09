@@ -3,37 +3,82 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Project_NOSKI</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="assets/js/jquery.fs.stepper.js"></script>
+	<link href="assets/css/jquery.fs.stepper.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="assets/css/all.css">
 </head>
 <body>
+
+<main class="main">
+<!-- ----------------Wish list-------------------- -->
 	<div class="container">
 		<div class="wish-table">
 			<div class="wish-head">
-				<div class="icon-holder"></div>
+				<div class="icon-holder"><span class="icon-wishlist"></span></div>
 				<span class="heading">Wish list</span>
 			</div>
 			<div class="wish-row">
-				<div class="wish-image"><img src="assets/images/sock.jpg" height="347" width="347" alt="sock"></div>
-				<div class="wish-name"><span class="collection">Forever 21</span><span class="sock-name">Lemon-pattern ankle sock</span></div>
-				<div class="wish-counter">Stepper</div>
-				<div class="wish-price">$1.50</div>
-				<div class="wish-btn"><a href="#">Add to cart</a></div>
+				<div class="wish-image wish-left"><img src="assets/images/sock.jpg" height="347" width="347" alt="sock"></div>
+				<div class="wish-descr">	
+					<div class="wish-name"><span class="collection">Forever 21</span><span class="sock-name">Lemon-pattern ankle sock</span></div>
+					<!-------------- Stepper ------------>
+					<div class="input-stepper">
+							<input class="stepper" type="number" value="1" min="1" class="stepper-input">
+					</div>
+					<!-- ---------------End of Stepper---------------- -->
+					<div class="wish-price">$1.50</div>
+				</div>
+				<div class="wish-btn">
+					<a href="#" class="button button-cart link-notunderline">Add to cart</a>
+					<a href="#" class="cart-mobile"><span class="icon icon-cart"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a>
+				</div>
 			</div>
 			<div class="wish-row">
-				<div class="wish-image"><img src="assets/images/sock2.jpg" height="346" width="346" alt="sock2"></div>
-				<div class="wish-name"><span class="collection">Forever 21</span><span class="sock-name">Cat-pattern ankle sock</span></div>
-				<div class="wish-counter">Stepper</div>
-				<div class="wish-price">$1.50</div>
-				<div class="wish-btn"><a href="#">Add to cart</a></div>
+				<div class="wish-image wish-left"><img src="assets/images/sock2.jpg" height="347" width="347" alt="sock"></div>
+				<div class="wish-descr">	
+					<div class="wish-name"><span class="collection">Forever 21</span><span class="sock-name">Cat-pattern ankle sock</span></div>
+					<div class="input-stepper">
+							<input class="stepper" type="number" value="1" min="1" class="stepper-input">
+					</div>
+					<div class="wish-price">$1.50</div>
+				</div>
+				<div class="wish-btn">
+					<a href="#" class="button button-cart link-notunderline">Add to cart</a>
+					<a href="#" class="cart-mobile"><span class="icon icon-cart"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a>
+				</div>
 			</div>
 			<div class="wish-row">
-				<div class="wish-image"><img src="assets/images/sock.jpg" height="347" width="347" alt="sock"></div>
-				<div class="wish-name"><span class="collection">Forever 21</span><span class="sock-name">Lemon-pattern ankle sock</span></div>
-				<div class="wish-counter">Stepper</div>
-				<div class="wish-price">$1.50</div>
-				<div class="wish-btn"><a href="#">Add to cart</a></div>
+				<div class="wish-image wish-left"><img src="assets/images/sock.jpg" height="347" width="347" alt="sock"></div>
+				<div class="wish-descr">	
+					<div class="wish-name"><span class="collection">Forever 21</span><span class="sock-name">Lemon-pattern ankle sock</span></div>
+					<div class="input-stepper">
+							<input class="stepper" type="number" value="1" min="1" class="stepper-input">
+					</div>
+					<div class="wish-price">$1.50</div>
+				</div>
+				<div class="wish-btn">
+					<a href="#" class="button button-cart link-notunderline">Add to cart</a>
+					<a href="#" class="cart-mobile"><span class="icon icon-cart"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a>
+				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
+	<!-- ---------------End of Wish list--------------------- -->
+</main>
+<!-- Stepper -->
+<script>
+	$(document).ready(function() {
+		$("input[type='number']").stepper({
+			customClass: "stepper",
+			labels: {
+			up: "+",
+			down: "-",
+			min: 1
+			}
+		});
+	});
+</script>
+
 </body>
 </html>

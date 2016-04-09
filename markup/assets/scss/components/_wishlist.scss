@@ -1,20 +1,28 @@
+$font-size-table: ceil(($font-size-base * 1.71)) !default; // ~24px
+
 .container{
 	max-width: 1380px;
 	margin: 0 auto;
 }
 .wish{
-	font: 24px 'PhagsPa';
 	&-head{
 		display: table-caption;
+		font: $font-size-table $font-family-base;
 		font-weight: 700;
 		text-align: center;
 		padding: 80px 0;
+		.icon-holder{
+			display: inline-block;
+			padding: 0 3.2%;
+		}
 	}
 	&-table{
 		display: table;
 		width: 100%;
+		margin-bottom: 170px;
 		.wish-row{
 			display: table-row;
+			letter-spacing: 2.1px;
 			& > div{
 				display: table-cell;
 				vertical-align: middle;
@@ -31,24 +39,42 @@
 					height: auto;
 				}
 			}
-			.wish-name{
-				text-align: left;
-				width: 34.8%;
-    			padding: 0 5.7% 0 4.7%;
-				.collection{
-					text-transform: uppercase;
-					display: block;
+			.wish-descr{
+				& > div{
+					display: table-cell;
+					vertical-align: middle;
+				}
+				.wish-name{
+					text-align: left;
+					width: 51%;
+	    			padding: 0 5.7% 0 4.7%;
+	    			font: $font-size-table $font-family-base;
+	    			text-transform: capitalize;
+					.collection{
+						text-transform: uppercase;
+						display: block;
+						font: inherit;
+					}
+				}
+				.input-stepper{
+					width: 33.7%;
+				}
+				.wish-price{
+					width: 16.3%;
+					font: $font-size-table $font-family-base;
+					font-weight: 700;
 				}
 			}
-			.wish-counter{
-				width: 17.3%;
-			}
-			.wish-price{
-				width: 11.6%;
-				font-weight: 700;
-			}
 			.wish-btn{
-				width: 20.3%;
+			    padding-left: 4.6%;
+				.button{
+					padding: 20px 30px;
+					font-weight: 700;
+					font-size: 27px;
+				}
+				.cart-mobile{
+					display: none;
+				}
 			}
 		}
 	}
