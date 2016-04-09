@@ -1,0 +1,55 @@
+.container{
+	max-width: 1380px;
+	margin: 0 auto;
+}
+.wish{
+	font: 24px 'PhagsPa';
+	&-head{
+		display: table-caption;
+		font-weight: 700;
+		text-align: center;
+		padding: 80px 0;
+	}
+	&-table{
+		display: table;
+		width: 100%;
+		.wish-row{
+			display: table-row;
+			& > div{
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				border-top: 1px solid #000;
+			}
+			&:last-child > div{
+				border-bottom: 1px solid #000;
+			}
+			.wish-image{
+				width: 16%;
+				img{
+					max-width: 175px;
+					height: auto;
+				}
+			}
+			.wish-name{
+				text-align: left;
+				width: 34.8%;
+    			padding: 0 5.7% 0 4.7%;
+				.collection{
+					text-transform: uppercase;
+					display: block;
+				}
+			}
+			.wish-counter{
+				width: 17.3%;
+			}
+			.wish-price{
+				width: 11.6%;
+				font-weight: 700;
+			}
+			.wish-btn{
+				width: 20.3%;
+			}
+		}
+	}
+}
