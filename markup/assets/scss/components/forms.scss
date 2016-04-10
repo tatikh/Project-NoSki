@@ -1,0 +1,46 @@
+.order_form{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	padding:70px 0 170px;
+	text-align:center;
+	& h2{
+		margin: 0 0 76px;
+	}
+	& input{
+		margin-bottom: 60px;
+	}
+}
+input{
+	width:100%;
+	font-size:18px;
+	line-height:43px;
+	color:$black-base;
+	border:none;
+	border-bottom:1px solid $black-base;
+}
+ input::-webkit-input-placeholder {color:$black-base;}
+ input::-moz-placeholder {
+ 	color:$black-base;
+	opacity: 1;
+}
+ input:-moz-placeholder {color:$black-base;}
+ input:-ms-input-placeholder {color:$black-base;}
+ .personal_data,
+ .billing_data,
+ .payment_data{
+ 	display: flex;
+ 	flex-direction: column;
+ 	width: 23.68%;
+ }
+.cart_code,
+.exp_data,
+.address_code{
+	width:23.1%;
+	border:1px solid $black-base;
+	padding:0 3px;
+	text-align:left;
+} 
+.address_code{
+	width:100%;
+}
