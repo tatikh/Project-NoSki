@@ -1,79 +1,177 @@
-$font-size-table: ceil(($font-size-base * 1.71)) !default; // ~24px
+$font-size-table-full: ceil(($font-size-base * 1.71)) !default; // ~24px
+$font-size-table-middle: ceil(($font-size-base * 1.42)) !default; // ~20px
+$font-size-table-mobile: ceil(($font-size-base * 1.14)) !default; // ~16px
 
 .container{
 	max-width: 1380px;
 	margin: 0 auto;
 }
-.wish{
+.table{
+	min-width: 320px;
 	&-head{
 		display: table-caption;
-		font: $font-size-table $font-family-base;
+		font: $font-size-table-full $font-family-base;
 		font-weight: 700;
 		text-align: center;
 		padding: 80px 0;
+		@media screen and (max-width: 785px){
+			padding: 25px 0;
+			background-color: #ebebeb;
+			font-size: $font-size-lg;
+		}
 		.icon-holder{
 			display: inline-block;
 			padding: 0 3.2%;
 		}
 	}
-	&-table{
+	&-body{
 		display: table;
 		width: 100%;
 		margin-bottom: 170px;
-		.wish-row{
+		.table-row{
 			display: table-row;
 			letter-spacing: 2.1px;
+			@media screen and (max-width: 1022px){
+				letter-spacing: 0;
+			}
 			& > div{
 				display: table-cell;
 				vertical-align: middle;
 				text-align: center;
-				border-top: 1px solid #000;
+				border-top: 1px solid $black-base;
 			}
 			&:last-child > div{
-				border-bottom: 1px solid #000;
+				border-bottom: 1px solid $black-base;
 			}
-			.wish-image{
+			.table-image{
 				width: 16%;
+				@media screen and (max-width: 785px){
+					width: 33%;
+				}
 				img{
 					max-width: 175px;
 					height: auto;
+					width: 100%;
 				}
 			}
-			.wish-descr{
-				& > div{
-					display: table-cell;
-					vertical-align: middle;
+			.table-middle{
+				    padding: 25px 0;
+				    width: 62%;
+				@media screen and (max-width: 785px){
+					width: 33%;
 				}
-				.wish-name{
-					text-align: left;
-					width: 51%;
-	    			padding: 0 5.7% 0 4.7%;
-	    			font: $font-size-table $font-family-base;
-	    			text-transform: capitalize;
-					.collection{
-						text-transform: uppercase;
-						display: block;
-						font: inherit;
+				.table-descr{
+					display: table;
+					@media screen and (max-width: 785px){
+						display: flex;
+						flex-direction: column;
+					}
+					& > div{
+						display: table-cell;
+						vertical-align: middle;
+						@media screen and (max-width: 785px){
+							display: block;
+							width: 100%;
+							@media screen and (max-width: 657px){
+								text-align: right;
+							}
+						}
+					}
+					.product-name{
+						text-align: left;
+						width: 70%;
+		    			padding: 0 5.7% 0 4.7%;
+		    			font: $font-size-table-full $font-family-base;
+		    			text-transform: capitalize;
+		    			@media screen and (max-width: 1200px){
+		    				font-size: $font-size-table-middle;
+		    				padding: 0 2.7%;
+			    			@media screen and (max-width: 785px){
+			    				order: 1;
+			    				width: 100%;   				
+			    				padding: 0;
+			    				text-align: center;
+			    				@media screen and (max-width: 657px){
+			    					font-size: $font-size-md;
+			    					text-align: right;
+			    				}
+			    			}
+			    		}
+						.collection{
+							text-transform: uppercase;
+							display: block;
+							font: inherit;
+							@media screen and (max-width: 657px){
+								display: none;
+							}
+						}
+					}
+					.middle-descr{
+						width: 20.7%;
+						@media screen and (max-width: 785px){
+							order: 3;
+							width: 100%;
+								.stepper{
+									width: 100%;
+									&-input{
+										width: 15%;
+									}
+									&-arrow{
+										width: 15%;
+									}
+								}
+							@media screen and (max-width: 657px){
+								.stepper{
+									&-input{
+										width: 33%;
+									}
+									&-arrow{
+										width: 33%;
+									}
+								}
+							}
+						}
+					}
+					.table-price{
+						width: 16.3%;
+						font: $font-size-table-full $font-family-base;
+						font-weight: 700;
+						padding: 15px 0;
+						@media screen and (max-width: 785px){
+							order: 2;
+							width: 100%;
+							font-size: $font-size-table-middle;
+							@media screen and (max-width: 657px){
+								font-size: $font-size-table-mobile;
+							}
+						}
 					}
 				}
-				.input-stepper{
-					width: 33.7%;
-				}
-				.wish-price{
-					width: 16.3%;
-					font: $font-size-table $font-family-base;
-					font-weight: 700;
-				}
 			}
-			.wish-btn{
+			.table-btn{
 			    padding-left: 4.6%;
+				@media screen and (max-width: 785px){
+					width: 33%;
+				}
 				.button{
 					padding: 20px 30px;
 					font-weight: 700;
 					font-size: 27px;
+					@media screen and (min-width: 1023px) and (max-width: 1200px){
+						padding: 15px 25px;
+    					margin-right: 10px;
+    					font-size: $font-size-table-full;
+					}
+					@media screen and (max-width: 1022px){
+						display: none;
+					}
 				}
 				.cart-mobile{
 					display: none;
+				    font-size: 24px;
+					@media screen and (max-width: 1022px){
+						display: block;
+					}
 				}
 			}
 		}
