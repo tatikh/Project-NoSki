@@ -11,6 +11,29 @@
 
 // //---GALLERY----
 
+
+.carusel {
+	overflow:hidden;
+}
+.carusel a {} /* свойства для кнопок прокрутки могут быть любыми */
+.carusel div {
+	max-width:560px;  /* ширина должна быть равна сумме длин видимых элементов прокрутки включая падинги.. */ 
+	overflow:hidden;
+	position:relative;
+}
+.carusel div ul {
+	position:relative; /* тут можно применить как relative так и absolute */
+	width:99999px;  /* !!! */
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.carusel div ul li { /* для елементов прокрутки нельзя задавать margin */
+	float:left;
+	max-width:560px;
+}
+	
+
 // .gallery,
 // .gallery3 {
 // 	width:560px;
