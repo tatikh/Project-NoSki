@@ -15,7 +15,7 @@ var markup = './markup';
 var dist = './dist';
 
 var markupPaths = {
-    html: [markup + '/**/*.html'],
+    html: [markup + '/**/sidebar.html'],
     js: [markup + '/assets/js/**/*.js'],
     scss: [markup + '/assets/scss/**/*.scss'],
     fonts: [markup + '/assets/fonts/**/*.*'],
@@ -75,7 +75,7 @@ gulp.task('browser-sync', function() {
         port: 3004,
         open: true,
         browser: 'default',
-        startPath: '/index.html'
+        startPath: '/sidebar.html'
 
     });
 });
@@ -88,6 +88,9 @@ gulp.task('watch', function() {
     });
     watch(markupPaths.js, function() {
         gulp.start('js');
+    });
+      watch(markupPaths.js, function() {
+        gulp.start('images');
     });
 });
 

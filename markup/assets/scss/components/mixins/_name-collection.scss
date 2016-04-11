@@ -1,0 +1,10 @@
+@mixin name-collection() {
+		position: absolute;
+		font-weight: bold;
+		// width: 100%;
+}
+
+@mixin name-collection-variant ($top: 0, $left: 0) {
+	top: $top;
+    left: $left;
+}

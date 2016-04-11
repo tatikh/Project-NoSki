@@ -180,13 +180,6 @@ input[type='checkbox']:checked ~ #search_form{
 	-webkit-animation: search_form  0.5s forwards;
 	animation:search_form  0.5s forwards;
 }
- input[type='text']::-webkit-input-placeholder {color:rgba(0,0,0,0.5);}
- input[type='text']::-moz-placeholder {
- 	color:rgba(0,0,0,0.5);
-	opacity: 1;
-}
- input[type='text']:-moz-placeholder {color:rgba(0,0,0,0.5);}
- input[type='text']:-ms-input-placeholder {color:rgba(0,0,0,0.5);}
 .check{
 	font:14px/33px Open Sans, sans-serif;
 	color:#5e5e5e;

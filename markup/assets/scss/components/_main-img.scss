@@ -1,0 +1,177 @@
+@import 'mixins/main-block-img';
+@import 'mixins/name-collection';
+
+.main
+{
+	min-width: 320px;
+	&-content {
+		min-width: 290px;
+		padding: 0 4.68%; //15px
+		background-image: none;
+	}
+	&-img {
+		margin-bottom: 40px;
+		overflow: hidden;
+	}
+
+	&-img-central {
+		height: 414px;
+		width: auto;
+		max-width: none;
+		position: relative;
+		left: -63%;
+	}
+	@media (min-width: 460px)  {
+		&-img-central {
+			left: -59%;
+		}
+	}
+	@media (min-width: 550px)  {
+		&-img-central {
+			left: -31%;
+		}
+	}
+	@media (min-width: 750px)  {
+		&-img-central {
+			left: -17%;
+		}
+	}
+
+	@media (min-width: 870px)  {
+		max-width: 1920px;
+		&-content {
+			padding: 0 10.1%; //195px
+			max-width: 1528px;
+			background-image: url(../../assets/images/content/main-bg1.svg), url(../../assets/images/content/main-bg2.svg), url(../../assets/images/content/main-bg3.svg);
+			background-position: 17% 8.8%, 82.7% 51.9%, 33% 80.1%; // 131px  193px, 1305px 1175px, 408px 1822px
+			background-repeat: no-repeat, no-repeat, no-repeat;
+			background-size: 6.6% auto, 4.7% auto, 3.3% auto;
+		}
+		&-img{
+			width: 100%;
+			height: auto;
+			margin-bottom: 16.36%; //250px
+			overflow: inherit;
+		}
+		&-img-central {
+			max-width: 100%;
+			height: auto;
+			left: 0;
+			position: static;
+		}
+		&-block{
+			padding-bottom: 11.71%; //179px
+				.h1{
+					margin-top: 0;
+					margin-bottom: 3%; //~28-46px
+					color: #010101;
+					width: auto;
+					@media (min-width: 870px)  {
+						font-size: $font-size-h1;
+					}
+				}
+		}
+	}
+}
+
+.block-img {
+	&-top{
+		@include main-block-img  ($width: 61%, $left: 6.9%);
+		margin-bottom: 3.5%;
+		@media (min-width: 870px)  {
+			@include main-block-img  ($width: 32.1%, $left: 68.06%);
+		}
+	}
+	&-middle-bottom{
+		@include main-block-img  ($width: 56.9%, $left: 35.9%, $margin-top: 0%);
+		@media (min-width: 870px)  {
+			@include main-block-img  ($width: 29.52%, $left: 19.5%, $margin-top: -8%);
+		}
+	}
+	&-middle-top{
+		@include main-block-img  ($width: 50.3%, $left: 0, $margin-top: -50%);
+		margin-bottom: 3.5%;
+		@media (min-width: 870px)  {
+			@include main-block-img  ($width: 27.49%, $left: 0, $margin-top: -23.3%);
+		}
+	}
+	&-bottom{
+		@include main-block-img  ($width: 73.1%, $left: 26.9%, $margin-top: 0%);
+		@media (min-width: 870px)  {
+			@include main-block-img  ($width: 32.1%, $left: 50.7%, $margin-top: -1%);
+		}
+	}
+}
+
+.collection{
+	&-middle {
+		margin-bottom: 40px;		
+	}
+	position: relative;
+}
+
+.name-collection{
+	@include name-collection;
+	line-height: 30px;
+		&-top{
+			@include name-collection-variant (58.1%,53.5%);
+		}
+		&-middle{
+			width: 124px;
+			text-align: left;
+			line-height: 1.1;
+			margin-top: 8px;
+			@include name-collection-variant (83.6%,55.8%);
+		}
+		&-bottom{
+			@include name-collection-variant (78.6%,0);
+		}
+	@media (min-width: 460px)  {
+		@include name-collection;
+			&-top{
+				@include name-collection-variant (60.9%,54.7%);
+			}
+			&-middle{
+				@include name-collection-variant (83.6%,55.8%);
+			}
+			&-bottom{
+				@include name-collection-variant (78.56%,11%);
+			}
+	}
+	@media (min-width: 748px)  {
+		font-size: $font-size-h4;
+	}
+	@media (min-width: 870px)  {
+		width: 100%;
+		font-size: $font-size-h4;
+		@include name-collection;
+			&-top{
+				@include name-collection-variant (60.9%,54.7%);
+			}
+			&-middle{
+				@include name-collection-variant (49.3%,40.8%);
+			}
+			&-bottom{
+				@include name-collection-variant (84.56%,43.5%);
+			}
+	}
+	@media (min-width: 992px)  {
+		@include name-collection;
+			&-top{
+				@include name-collection-variant (40.9%,49.7%);
+			}
+			&-middle{
+				@include name-collection-variant (49.3%,40.8%);
+			}
+			&-bottom{
+				@include name-collection-variant (74.56%,43.5%);
+			}
+	}
+	@media (min-width: 1208px)  {
+		@include name-collection;
+			&-top{
+				@include name-collection-variant (40.9%,54.7%);
+			}
+	}
+}
+

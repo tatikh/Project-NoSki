@@ -6,7 +6,6 @@
 	<title>Project_NOSKI</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/all.css">
 	<script type="text/javascript" src="assets/js/assets.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/all.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
@@ -55,79 +54,78 @@
 <main class="main container">
 	<section class="order_form">
 		<div class="personal_data">
-			<h2>Personal Detail</h2>
-			<input type="text" placeholder="name">
-			<input type="email" placeholder="e-mail">
-			<input type="tel" placeholder="phone number">
+			<label for="toggle-1"><h2>Personal Detail</h2></label>
+			<input id="toggle-1" type="checkbox" class="accordion_toggle">
+			<div class="accordion_target">
+				<input type="text" placeholder="name">
+				<input type="email" placeholder="e-mail">
+				<input type="tel" placeholder="phone number">
+			</div>
 		</div>
 		<div class="billing_data">
-			<h2>Billing Address</h2>
-			<input type="text" placeholder="line">
-			<input type="text" placeholder="town">
-			<input type="text" placeholder="country">
-			<input type="text" placeholder="code" id="address_code" class="address_code">
+			<label for="toggle-2"><h2>Billing Address</h2></label>
+			<input id="toggle-2" type="checkbox" class="accordion_toggle">
+			<div class="accordion_target">
+				<input type="text" placeholder="line">
+				<input type="text" placeholder="town">
+				<input type="text" placeholder="country">
+				<input type="text" placeholder="code" id="address_code" class="address_code">
+			</div>
 		</div>
 		<div class="payment_data">
-			<h2>Payment Details</h2>
-			<input type="text" placeholder="name">
-			<input type="text" placeholder="card No">
-			<div class="cart_info">
-				<span>
-					<label for="cart_code">code</label>
-					<label for="exp_data">exp data</label>
-				</span>
-				<span>
-					<input type="text" id="cart_code" class="cart_code">
-					<input type="text" id="exp_data" class="exp_data">/<input type="text" id="exp_data" class="exp_data">
-				</span>
+			<label for="toggle-3"><h2>Payment Details</h2></label>
+			<input id="toggle-3" type="checkbox" class="accordion_toggle">
+			<div class="accordion_target">
+				<input type="text" placeholder="name">
+				<input type="text" placeholder="card No">
+				<div class="cart_info">
+					<span class="form-caption">
+						<label for="cart_code">code</label>
+						<label for="exp_data">exp data</label>
+					</span>
+					<span class="input-field">
+						<input type="text" id="cart_code" class="cart_code">
+						<span><input type="text" id="exp_data" class="exp_data">/<input type="text" id="exp_data" class="exp_data"></span>
+					</span>
+				</div>
 			</div>
 		</div>
 	</section>
 </main>
-<footer>
-        <div class="footer">
-            <div class="footer-holder">
-                <div class="footer-inner">
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Store</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">FAQ's</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Shipping Info</a></li>
-                        <li><a href="">Privacy &amp; Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-inner">
-                    <form>
-                        <div class="form_group">
-                            <label for="">Newsletters</label>
-                            <input type="email" class="form_control" id="InputEmail1" placeholder="E-mail">
-                            <button type="submit" class="btn-submit"><span class="icon icon-arrow-right2"></span></button>
-                        </div>
-                    </form>
-                </div>
-                <div class="footer-inner">
-                    <div class="footer-social-list">
-                        <ul>
-                            <li><a href="#"><span class="icon icon-facebook"></span></a></li>
-                            <li><a href="#"><span class="icon icon-google"></span></a></li>
-                            <li><a href="#"><span class="icon icon-twitter"></span></a></li>
-                            <li><a href="#"><span class="icon icon-instagram"></span></a></li>
-                            <li><a href="#"><span class="icon icon-pinterest"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
+<footer class="footer">
+        <div class="footer-holder container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Store</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">FAQ's</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Shipping Info</a></li>
+                    <li><a href="">Privacy &amp; Policy</a></li>
+                </ul>
             </div>
-            <hr>
-            <div class="copyright">
-                <p>Copyright © 2015 Nosockstore All Rights Reserved</p>
+            <div class="follow-block">
+                <form>
+                    <label for="InputEmail">Newsletters</label>
+                    <span class="fake-input"><input type="email" class="input-inverse" id="InputEmail" placeholder="E-mail">
+                    <button type="submit" class="btn-submit"><i class="icon icon-arrow-right2"></i></button></span>
+                </form>
             </div>
+            <ul class="social-networks">
+                <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon icon-google"></span></a></li>
+                <li><a href="#"><span class="icon icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon icon-pinterest"></span></a></li>
+            </ul>
         </div>
-        <button class="draw">lknflksnfksjfvkj</button>
-    </footer>
+        <div class="copyright">
+            <p>Copyright © 2015 Nosockstore All Rights Reserved</p>
+        </div>
+</footer>
 </body>
 </html>
