@@ -3,6 +3,20 @@
 $black-base:              #000 !default;
 $black-light:             lighten($black-base, 46.7%) !default; // #777
 $black-lighter:           lighten($black-base, 97.5%) !default; // #eee
+$white: 				#fff !default; 
+
+//== Scaffolding
+$body-bg:              	 	#fff !default;
+$footer-bg:              	 $black-base !default;
+$text-color-base:            $black-base !default;
+$text-color-inverse:		$white !default;
+$text-color-second:          $black-light !default;
+$link-color:             	 $black-base !default;
+$link-hover-color:      	lighten($black-base, 15%) !default;
+//=======
+$black-base:              #000 !default;
+$black-light:             lighten($black-base, 46.7%) !default; // #777
+$black-lighter:           lighten($black-base, 97.5%) !default; // #eee
 
 //== Scaffolding
 $body-bg:              	 	#fff !default;
@@ -23,7 +37,9 @@ $font-size-md:         	ceil(($font-size-base * 0.9643)) !default; // ~13.5px
 $font-size-sm:         	ceil(($font-size-base * 0.7143)) !default; // ~10px
 
 $font-size-h1:            floor(($font-size-base * 2.571)) !default; // ~36px
+$font-size-h1-sm:            floor(($font-size-base * 1.286)) !default; // ~18px
 $font-size-h4:            ceil(($font-size-base * 1.2857)) !default; // ~18px
+$font-size-h4-sm: 			$font-size-base; 
 // $font-size-h2:            floor(($font-size-base * 2.143)) !default; // ~30px
 // $font-size-h3:            ceil(($font-size-base * 1.715)) !default; // ~24px
 // $font-size-h5:            $font-size-base !default;
@@ -35,9 +51,22 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-weight:    700 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
+
+//buttons
+$btn-font-family: 		$font-family-base;
+$btn-font-size:         ceil(($font-size-base * 1.42857)) !default; // ~20px
+
+//== Breadcrumbs
+$breadcrumb-padding-vertical:   5px;
+$breadcrumb-padding-horizontal: 10px;
+$breadcrumb-color:              $black-base;
+//** Text color of current page in the breadcrumb
+$breadcrumb-active-color:       #f36a3c;
+$breadcrumb-separator:          "/";
+
 
 
 

@@ -1,0 +1,26 @@
+.breadcrumb {
+  width: 100%;
+  padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
+  margin-bottom: 70px;
+  list-style: none;
+  line-height: 1;
+  > li {
+    display: inline-block;
+
+    + li:before {
+       $nbsp: "\00a0";
+      content: "#{$breadcrumb-separator}#{$nbsp}"; 
+      padding: 0 5px;
+      color: $breadcrumb-color;
+    }
+  }
+    >li>a {
+      @include link-notunderline;
+      &:hover {
+        text-decoration: $link-hover-decoration;
+      }
+  }
+  > .active {
+    color: $breadcrumb-active-color;
+  }
+}

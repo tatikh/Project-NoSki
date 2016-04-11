@@ -33,7 +33,7 @@ gulp.task('html', function() {
 gulp.task('js', function() {
     return gulp.src(markupPaths.js)
         .pipe(uglify())
-        .pipe(concat('assets.js'))
+       .pipe(concat('assets.js'))
         .pipe(gulp.dest('./dist/assets/js'))
          .pipe(browserSync.reload({
             stream: true
@@ -89,7 +89,11 @@ gulp.task('watch', function() {
     watch(markupPaths.js, function() {
         gulp.start('js');
     });
+<<<<<<< HEAD
       watch(markupPaths.js, function() {
+=======
+    watch(markupPaths.image, function() {
+>>>>>>> af98bf44c8f8735f9eb1d7374c611f300bfe028f
         gulp.start('images');
     });
 });

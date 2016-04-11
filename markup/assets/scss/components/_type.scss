@@ -46,8 +46,8 @@ h1, h2, h3, h4, h5, h6,
   color: $headings-color;
 }
 
-h1, .h1 { font-size: $font-size-h1}
-h4, .h4 { font-size: $font-size-h4}
+h1, .h1 { font-size: $font-size-h1-sm}
+h4, .h4 { font-size: $font-size-h4-sm}
 
 
 // alignments
@@ -70,8 +70,11 @@ h4, .h4 { font-size: $font-size-h4}
 .text-uppercase      { text-transform: uppercase; }
 .text-capitalize     { text-transform: capitalize; }
 
-.link-notunderline{
+@mixin link-notunderline() {
   text-decoration: none;
+}
+.link-notunderline{
+  @include link-notunderline;
 }
 
 // Lists
@@ -108,13 +111,13 @@ ol {
   }
 }
 
-  p,
-  ul,
-  ol {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+  // p,
+  // ul,
+  // ol {
+  //   &:last-child {
+  //     margin-bottom: 0;
+  //   }
+  // }
 
   //------------------------------
   @mixin center-block() {
@@ -125,4 +128,8 @@ ol {
 
 .center-block {
    @include center-block();
+}
+
+input {
+  outline: none;
 }
