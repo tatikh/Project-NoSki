@@ -1,4 +1,5 @@
 .bottom_gallery {
+   
    h1 {
         font-size: 35px;
         margin-left: 300px;
@@ -15,12 +16,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    .product {
+    .product_list {
         position: relative;
         img {
             display: block;
-            max-width: 220px; 
-            height: auto;
+            width: 220px; 
+            height: 220px;
             padding-top: 20px;
         }
         &_price {
@@ -61,10 +62,10 @@
             }
         }
     }
-    .product:hover p {
+    .product_list:hover p {
         display: block;
     }
-    .product:hover .product_icon {
+    .product_list:hover .product_icon {
         display: block;
     }
 }
