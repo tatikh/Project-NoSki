@@ -4,17 +4,20 @@
 }
 
 @-webkit-keyframes search_form {
-from {right:-9999px;}
+from {right:-100px;}
 to {right:45px;}
 }
 
 @keyframes search_form {
-from {right:-9999px;}
+from {right:-100px;}
 to {right:45px;}
 }
 .container{
 	max-width:1530px;
 	margin:0 auto;
+	@media only screen and (max-width: 1530px){
+		padding:0 21px;
+	}
 }
 .header{
 	padding:63px 0 61px;
@@ -37,7 +40,6 @@ to {right:45px;}
 	color:$text-color-base;
 	font-family:'PhagsPa';
 	font-weight:bold; 
-	width:710px;
 		& ul{
 			margin: 0;
 			padding:0;
@@ -73,6 +75,7 @@ to {right:45px;}
 		font-size: 25px;
 		line-height:28px;
 		margin: 0;
+		padding:0;
 		display: flex;
 		>li{
 			display: inline;
@@ -82,12 +85,23 @@ to {right:45px;}
 			}
 		}
 	}
+.cart-icon{
+	position: relative;
+	& .count_number{
+		position: absolute;
+		top:-12px;
+		right:4px;
+		font-size: 18px;
+		font-weight:bold;
+	}
+}
 //burger-menu styles
 .opener{
 	display:none;
 	float:left;
 	width:56px;
 	height:58px;
+	margin:12px 0 0;
 	position: relative;
 	text-indent:-9999px;
 	overflow:hidden;
@@ -149,7 +163,7 @@ to {right:45px;}
 		cursor:pointer;
 	}
 	& #search_form{
-		max-width: 150px;
+		max-width: 100px;
 		position:absolute;
 		right:-9999px;
 		bottom:0;
@@ -158,20 +172,47 @@ to {right:45px;}
 		border-top:0;
 		border-left:0;
 		border-right:0;
+		font-size:14px;
+		line-height: 24px;
 	}
 }
 input[type='checkbox']:checked ~ #search_form{
 	-webkit-animation: search_form  0.5s forwards;
 	animation:search_form  0.5s forwards;
 }
-@media only screen and (max-width: 767px){
-	.logo_block{
-		display: none;
+.check{
+	font:14px/33px Open Sans, sans-serif;
+	color:#5e5e5e;
+	display:inline-block;
+	margin: 0 0 38px 0;
+}
+@media only screen and (max-width: 1300px){
+	#nav{
+		& ul{
+			>li{
+				display: inline-block;
+				padding:0 10px;
+				
+				&:first-child{
+					padding:0 10px 0 0;
+				}
+				&:last-child{
+					padding:0 0 0 10px;
+				}
+			}
+		}
 	}
 }
 @media only screen and (max-width: 1023px){ 
+	.icons_block{
+		margin:0 -50% 0 0;
+	}
 	.opener{
 		display: block;
+	}
+	#nav{
+		order: 1;
+		width: 5%;
 	}
 #nav .drop{
 		float:none;
@@ -181,9 +222,10 @@ input[type='checkbox']:checked ~ #search_form{
 		transition:opacity 0.25s linear;
 		height:0;
 		position: absolute;
-		top: 80px;
+		top: 89px;
 		left: 0;
 		right: 0;
+		z-index: 1000;
 	}
 	.nav-active #nav .drop{
 		opacity:1;
@@ -216,6 +258,16 @@ input[type='checkbox']:checked ~ #search_form{
 	#nav li a{
 		display:block;
 		padding:3px 0 7px;
+	}	
+}
+@media only screen and (max-width: 767px){
+	.logo_block{
+		display: none;
 	}
-	
+	#nav{
+		order:0;
+	}
+	.icons_block{
+		margin:0;
+	}
 }
