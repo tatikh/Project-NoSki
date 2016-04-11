@@ -1,19 +1,12 @@
 .footer {
-<<<<<<< HEAD
     background: $black-base;
     padding:90px 0 37px;
     @media only screen and (max-width: 767px){
         padding:20px 0 10px;
     }
     & .footer-holder {
-=======
-    background: $footer-bg;
-    color: $text-color-inverse;
-    &-holder {
->>>>>>> af98bf44c8f8735f9eb1d7374c611f300bfe028f
         display: flex;
         justify-content: space-between;
-<<<<<<< HEAD
         align-items:center;
         color: #fff;
         margin:0 0 75px;
@@ -67,35 +60,11 @@
                 text-decoration: none;
                     
                 &:hover {
-=======
-        align-items: center;
-        padding: 83px 10px 25px 10px;
-        font-size: 20px;
-        line-height: $line-height-base;
-        .line-mobile{
-            	display: none;
-            }
-    }
-    &-inner {
-        	padding-bottom: 25px;
-        > ul {
-            display: inline-block;
-            padding: 0;
-            padding-right: 50px;
-            > li {
-                list-style-type: none;
-                display: block;
-                text-align: left;
-                margin-right: 10px;
-                > a {
->>>>>>> af98bf44c8f8735f9eb1d7374c611f300bfe028f
                     color: #fff;
                     opacity: 0.7;
                 }
             }
-            
         }
-<<<<<<< HEAD
     }
 }
    .follow-block {
@@ -177,79 +146,8 @@
                 }
             }
         }
-=======
-        .form {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            align-self: flex-start;
-
-            &_group {
-                position: relative;
-                display: table;
-                border-collapse: separate;
-                margin-top: -15px;
-                margin-right: 40px;
-
-                .form_label {
-                    margin-right: 55px;
-                    margin-left:55px; 
-                    display: inline-block;
-
-                }
-                .form_input {
-                    display: inline-block;
-                    border: 0;
-                    border-bottom: 1px solid #fff;
-                    min-width:250px;
-                    background: transparent;
-                    outline: none;
-
-                }
-                .btn-submit {
-                    display: inline;
-                    text-align: center;
-                    cursor: pointer;
-                    padding: 3px 0px;
-                    font-size: 14px;
-                    color: #fff;
-                    border: 0;
-                    border-bottom: 1px solid #fff;
-                    background: transparent;
-                    position: relative;
-
-                }
-            }
-         
-        }
-        .footer-social-list {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            > ul {
-                display: inline;
-                > li {
-                    list-style-type: none;
-                    display: inline;
-                    text-align: left;
-                    margin-right: 25px;
-                    > a {
-                        color: #fff;
-                        text-decoration: none;
-                        &:hover {
-                            color: #fff;
-                            filter: alpha(Opacity=70);
-                            opacity: 0.7;
-                        }
-                    }
-                }
-            }
-        }
-    }
->>>>>>> af98bf44c8f8735f9eb1d7374c611f300bfe028f
 }
 .copyright {
-<<<<<<< HEAD
     color: rgba(255,255,255,0.3);
     font-size: 13px;
     line-height: 17px;
@@ -276,17 +174,3 @@
         margin: 0 0 10px;
     }
 }
-=======
-    display: block;
-    p {
-        color: #fff;
-        filter: alpha(Opacity=30);
-        opacity: 0.3;
-        font-size: 14px;
-        padding: 30px;
-        text-align: center;
-    }
-   
-}
-
->>>>>>> af98bf44c8f8735f9eb1d7374c611f300bfe028f

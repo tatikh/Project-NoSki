@@ -15,7 +15,7 @@ var markup = './markup';
 var dist = './dist';
 
 var markupPaths = {
-    html: [markup + '/**/sidebar.html'],
+    html: [markup + '/**/*.html'],
     js: [markup + '/assets/js/**/*.js'],
     scss: [markup + '/assets/scss/**/*.scss'],
     fonts: [markup + '/assets/fonts/**/*.*'],
@@ -33,7 +33,7 @@ gulp.task('html', function() {
 gulp.task('js', function() {
     return gulp.src(markupPaths.js)
         .pipe(uglify())
-       .pipe(concat('assets.js'))
+        .pipe(concat('assets.js'))
         .pipe(gulp.dest('./dist/assets/js'))
          .pipe(browserSync.reload({
             stream: true
@@ -75,7 +75,7 @@ gulp.task('browser-sync', function() {
         port: 3004,
         open: true,
         browser: 'default',
-        startPath: '/sidebar.html'
+        startPath: '/index.html'
 
     });
 });
@@ -88,13 +88,6 @@ gulp.task('watch', function() {
     });
     watch(markupPaths.js, function() {
         gulp.start('js');
-    });
-<<<<<<< HEAD
-      watch(markupPaths.js, function() {
-=======
-    watch(markupPaths.image, function() {
->>>>>>> af98bf44c8f8735f9eb1d7374c611f300bfe028f
-        gulp.start('images');
     });
 });
 
