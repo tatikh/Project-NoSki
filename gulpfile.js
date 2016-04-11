@@ -33,7 +33,7 @@ gulp.task('html', function() {
 gulp.task('js', function() {
     return gulp.src(markupPaths.js)
         .pipe(uglify())
-        .pipe(concat('assets.js'))
+       .pipe(concat('assets.js'))
         .pipe(gulp.dest('./dist/assets/js'))
          .pipe(browserSync.reload({
             stream: true
