@@ -59,5 +59,14 @@ $headings-color:          inherit !default;
 $btn-font-family: 		$font-family-base;
 $btn-font-size:         ceil(($font-size-base * 1.42857)) !default; // ~20px
 
+//== Breadcrumbs
+$breadcrumb-padding-vertical:   5px;
+$breadcrumb-padding-horizontal: 10px;
+$breadcrumb-color:              $black-base;
+//** Text color of current page in the breadcrumb
+$breadcrumb-active-color:       #f36a3c;
+$breadcrumb-separator:          "/";
+
+
 
 

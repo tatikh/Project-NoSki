@@ -9,8 +9,16 @@
 
 @import 'components/icons/style';
 
+@import 'components/_header';
+@import 'components/sidebar';
+@import 'components/_product-grid';
+
+@import 'components/forms';
+
+
 @import 'components/buttons';
 @import 'components/main-img';
+
 
 
 @import 'components/header';
@@ -23,3 +31,6 @@
 @import 'components/footer';
 
 @import 'components/stepper';
+
+@import 'components/breadcrumbs';
+@import 'components/product-description';
