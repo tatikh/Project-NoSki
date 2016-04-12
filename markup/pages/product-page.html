@@ -6,6 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>UA-TanyaProject_NOSKI</title>
 	<script type="text/javascript" src="../assets/js/assets.js"></script>
+<!-- 	// <script type="text/javascript" src="../assets/js/plugins/jquery-1.8.3.min.js"></script>
+	// <script type="text/javascript" src="../assets/js/plugins/jquery.elevateZoom-3.0.8.min.js"></script>
+	// <script type="text/javascript" src="../assets/js/plugins/jquery.elevatezoom.js"></script> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link href="../assets/css/jquery.fs.stepper.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/all.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-touch-icon-60x60.png">
@@ -22,8 +27,8 @@
 	<link rel="icon" type="image/png" href="../assets/images/favicons/android-chrome-192x192.png" sizes="192x192">
 	<link rel="icon" type="image/png" href="../assets/images/favicons/favicon-16x16.png" sizes="16x16"></head>
 </head>
-<body>
-	<div class="wrapper">
+<body id="product-page">
+	<div class="wrapper center-block">
 		<header class="header">
 			<div class="container header-holder">
 				<div class="logo_block">
@@ -74,7 +79,7 @@
 			</div>
 		</header>
 
-		<div class="container-pr center-block">
+		<div class="content-product center-block">
 			<ul class="sidebar">
 				<li>
 					<label for="link1">Men</label>
@@ -116,6 +121,7 @@
 					<label for="link3">Kids</label>
 					<input id="link3" class="link_toggle" type="radio" name="accordion-01"></ul>
 
+			<div class="product-block">
 				<ul class="breadcrumb">
 					<li>
 						<a href="#">Store</a>
@@ -128,10 +134,9 @@
 					</li>
 					<li class="active">Crab Pattern Ankle Socks</li>
 				</ul>
-				<div class="product">
-
+				<div class="product-card">
 					<div class="product-gallery">
-						<img id="zoom_07" src="../assets/images/content/product-photo1.jpg" data-zoom-image="assets/images/content/product-photo1.jpg"></div>
+						<img id="zoom_07" src="../assets/images/content/product-photo1.jpg" data-zoom-image="../assets/images/content/product-photo1.jpg"></div>
 					<div class="description">
 						<div class="description-info center block">
 							<h4 class="product-name h4">Crab Pattern Ankle Socks</h4>
@@ -149,10 +154,24 @@
 									<li class="colorlist-lightblue"></li>
 								</ul>
 							</div>
+							<div class="step">
+								<input class="stepper" type="number" value="1" min="1" class="stepper-input">
+							</div>
+							<div class="buttons">
+								<div class="table-btn">
+									<a href="#" class="button button-cart link-notunderline">Add to cart</a>
+								</div>
+								<div class="table-btn">
+									<a href="#" class="button button-wish link-notunderline"><i class="icon-wishlist"></i></a>			
+								</div>
+							</div>
+
+
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
 			<footer>
 				<div class="footer">
@@ -233,5 +252,10 @@
 				</div>
 				<button class="draw">lknflksnfksjfvkj</button>
 			</footer>
-</body>
-		</html>
+		<script>
+			$(document).ready(function() {
+				$("#zoom_07").elevateZoom({ zoomType	: "lens", lensShape : "round", lensSize : 200 }); 
+			});
+		</script>
+	</body>
+</html>
