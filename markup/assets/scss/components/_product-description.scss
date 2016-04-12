@@ -11,7 +11,7 @@
  
 #product-page .wrapper {
 	max-width: 1530px;
-	padding: 0 10%;
+	padding: 0 5%;
 }
 
 .content-product {
@@ -35,7 +35,7 @@
 	&-card {
 		display: flex;
 		justify-content: space-between;
-		margin-right: 21%;
+		margin-bottom: 20%;
 		&-gallery {
 		width: 32%;
 		margin-top: 14.5%;
@@ -65,6 +65,9 @@
 		.info-more {
 			margin: 0 0 15.5%;
 		}
+		.step {
+			margin-bottom: 13%;
+		}
 		> .buttons {
 			margin-top: 50px;
 			display: flex;
@@ -93,6 +96,7 @@
 	.colorlist {
 		display: flex;
 		align-items: center;
+
 		>li:first-child {
 			margin-right: 5.7%;
 		}
