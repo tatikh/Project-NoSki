@@ -24,7 +24,7 @@
 <body>
 <div class="wrapper">
 <header class="header">
-	<div class="container header-holder">
+	<div class="container-lg header-holder">
 		<div class="logo_block">
 			<a href=""><img src="../assets/images/logo.svg" alt="logo" class="logo"></a>
 		</div>
@@ -51,7 +51,7 @@
 		</ul>
 	</div>
 </header>
-<main class="main container">
+<main class="main container-lg">
 	<section class="product-grid">
 		<ul class="sidebar">
 			<li>
@@ -65,10 +65,10 @@
 				</ul>
 			</li>
 			<li>
-				<label for="link2">WoMen</label>
+				<label for="link2">Women</label>
 				<input id="link2" class="link_toggle" type="radio" name="accordion-01">
 				<ul class="dropdown">
-					<li><a href="">ankle</a></li>
+					<li class="active"><a href="">ankle</a></li>
 					<li><a href="">crew</a></li>
 					<li><a href="">knee</a></li>
 					<li><a href="">over the knee</a></li>
@@ -604,27 +604,27 @@
 	</section>
 </main>
 <footer class="footer">
-    <div class="footer-holder container">
-        <div class="footer-links">
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Store</a></li>
-            </ul>
-            <ul>
-                <li><a href="">Contact</a></li>
-                <li><a href="">FAQ's</a></li>
-             </ul>
-             <ul>
-                 <li><a href="">Shipping Info</a></li>
-                 <li><a href="">Privacy &amp; Policy</a></li>
-             </ul>
-        </div>
+    <div class="container-lg">
+        <div class="footer-holder">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Store</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">FAQ's</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Shipping Info</a></li>
+                    <li><a href="">Privacy &amp; Policy</a></li>
+                </ul>
+            </div>
             <div class="follow-block">
                 <form>
                     <label for="InputEmail">Newsletters</label>
-                    <span class="fake-input">
-                    	<input type="email" class="input-inverse" id="InputEmail" placeholder="E-mail">
-                        <button type="submit" class="btn-submit"><i class="icon icon-arrow-right2"></i></button></span>
+                    <span class="fake-input"><input type="email" class="input-inverse" id="InputEmail" placeholder="E-mail">
+                    <button type="submit" class="btn-submit"><i class="icon icon-arrow-right2"></i></button></span>
                 </form>
             </div>
             <ul class="social-networks">
@@ -638,7 +638,8 @@
         <div class="copyright">
             <p>Copyright © 2015 Nosockstore All Rights Reserved</p>
         </div>
-    </footer>
+    </div>
+</footer>
 </div>
 <script type="text/javascript">
 	$(function(){

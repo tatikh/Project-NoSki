@@ -1,10 +1,21 @@
+.checkout.container-lg{
+	padding:0;
+}
 .order_form{
 	display:flex;
-	justify-content:space-around;
-	flex-wrap:wrap;
-	flex-direction:row;
+	flex-direction:column;
 	padding:70px 0 170px;
 	text-align:center;
+	@media only screen and (max-width: 767px){
+		padding:0;
+	}
+	& .input-data-form{
+		display: flex;
+		justify-content: space-around;
+		margin:0 0 105px;
+		@media only screen and (max-width: 767px){
+			margin: 0;
+		}
 	& h2{
 		margin: 0 0 76px;
 		font-size: 24px;
@@ -18,11 +29,33 @@
 	}
 	& input{
 		margin-bottom: 60px;
+		@media only screen and (max-width: 767px){
+			margin-bottom: 0;
+		}
 	}
 	@media only screen and (max-width: 767px){
 		flex-direction: column;
 		padding:10px 0 0;
 	}
+}
+& .btn-order{
+	text-transform:uppercase;
+	color:#fff;
+	background: $black-base;
+	display:inline-block;
+	padding:22px 25px;
+	width:255px;
+	align-self:flex-end;
+	margin:0 107px 0 0;
+	border:none;
+	&:hover{
+		background: lighten($black-base, 20%);
+	}
+	@media only screen and (max-width: 767px){
+		width: 100%;
+		align-self:auto;
+	}
+}
 }
 input{
 	width:100%;
@@ -31,6 +64,12 @@ input{
 	color: $black-base !important;
 	border:none;
 	border-bottom:1px solid $black-base;
+	@media only screen and (max-width: 767px){
+		line-height: 57px;
+		padding:0 10px 0 16px;
+		border-bottom:1px solid rgba(0,0,0,0.3);
+		font-size: 13px;
+	}
 }
  input::-webkit-input-placeholder {color:$black-base !important;}
  input::-moz-placeholder {
@@ -40,6 +79,22 @@ input{
  input:-moz-placeholder {color:$black-base !important;}
  input:-ms-input-placeholder {color:$black-base !important;}
 
+@media only screen and (max-width: 767px){
+	input::-webkit-input-placeholder {color:lighten($black-base, 50%) !important;}
+    input::-moz-placeholder {
+ 	color:lighten($black-base, 50%);
+	opacity: 1;
+}
+    input:-moz-placeholder {color:lighten($black-base, 50%) !important;}
+    input:-ms-input-placeholder {color:lighten($black-base, 50%) !important;}
+}
+input.input-inverse::-webkit-input-placeholder {color:#fff !important;}
+    input.input-inverse::-moz-placeholder {
+ 	color:#fff;
+	opacity: 1;
+}
+    input.input-inverse:-moz-placeholder {color:#fff !important;}
+    input.input-inverse:-ms-input-placeholder {color:#fff !important;}
  .personal_data,
  .billing_data,
  .payment_data{
@@ -57,31 +112,46 @@ input{
 .exp_data,
 .address_code{
 	width:23.1%;
-	border:1px solid $black-base !important;
+	border:1px solid $black-base;
 	padding:0 3px;
+	@media only screen and (max-width: 767px){
+		border:none;
+		border-bottom:1px solid rgba(0,0,0,0.3);
+		padding:0 10px 0 16px;
+		width: 43%;
+	}
 	& label{
 		margin:0 10px 0;
 	}
 } 
+.cart_code{
+	margin:0 0 60px 70px;
+	@media only screen and (max-width: 767px){
+		margin: 0 0 60px 25px;
+	}
+}
+.slash{
+	font-size:42px;
+	display:inline-block;
+
+}
 .address_code{
 	width:100%;
 }
 .cart_info{
 	display:flex;
+	flex-direction:column;
 	align-items:center;
 }
-.form-caption,
-.input-field{
+.code-row,
+.data-cart_row{
 	display:flex;
-	flex-direction:column;
+	flex-direction:row;
 }
 .accordion_toggle{
 	display:none;
 }
 //accordion
-/**
-* Элемент label который запускает открыть/закрыть.
-*/
 @media only screen and (max-width: 767px){
 .personal_data  label,
 .billing_data label,
@@ -93,7 +163,7 @@ input{
   	background: #ebebeb;
   	font-size: 16px;
   	line-height: 20px;
-  	padding:22px 0;
+  	padding:22px 15px;
   	border-bottom:1px solid $black-base;
   	position: relative;
   	&:before{
@@ -104,11 +174,14 @@ input{
   		top:50%;
   		right:14px;
   	}
+  	&:after{
+  		content: '';
+  		position: absolute;
+  		left:-9999px;
+  		right:-9999px;
+  		background: #ebebeb;
+  	}
 }
-/**
-* элементы radio/checkbox всегда должны быть скрыты 
-* c помощью нулевых значений свойства clip 
-*/
 .accordion_toggle {
   border: 0;
   clip: rect(0 0 0 0);
@@ -119,10 +192,6 @@ input{
   position: absolute;
   width: 1px;
 }
-/**
-* скрытое содержание аккордеона
-* c помощью нулевых значений свойства clip
-*/
 .accordion_target {
   border: 0;
   clip: rect(0 0 0 0);
@@ -135,23 +204,16 @@ input{
   background-color: #fff;
   color: #444;
 }
-/**
-* когда переключатель checked на radio/checkbox, показать содержимое аккордеона.
-*/
 .accordion_toggle:checked + .accordion_target {
   position: static;
   overflow: visible;
   width: auto;
   height: auto;
-  margin: auto;
   clip: auto;
-  padding: 1.5rem;
- /* задержка появления  функция анимации */
  -webkit-animation:fadeIn ease-in 0.7s; 
  -moz-animation:fadeIn ease-in 0.7s;
  animation:fadeIn ease-in 0.7s; 
 }
-/* анимация при появлении блоков с содержанием */
 @-moz-keyframes fadeIn {
     from { opacity: 0; }
 to { opacity: 1 }
@@ -164,7 +226,20 @@ to { opacity: 1 }
     from { opacity: 0; }
 to { opacity: 1 }
 }
+.cart_info label{
+	background: transparent;
+	border:transparent;
+	display:inline;
+	font-weight:normal;
+	font-size: 13px;
+	&:before{
+		content: '';
+	}
 }
-.accordion_toggle:checked + label:before{
-	transform:rotate(90deg);
+.cart_info{
+	align-items:flex-start;
+}
+.slash{
+	font-size:35px;
+}
 }

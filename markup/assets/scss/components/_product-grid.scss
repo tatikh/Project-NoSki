@@ -48,6 +48,7 @@ to {height:100%;}
 	padding:60px 0 170px;
 	@media only screen and (max-width: 767px){
 		display: block;
+		padding:0 0 30px;
 	}
 }
 
@@ -88,11 +89,13 @@ to {height:100%;}
 .caption{
 	& .product-name{
 	position: absolute;
-	bottom:10px;
+	bottom:-15px;
 	right:-200px;
 	font-size:18px;
+	text-align:right;
 	@media only screen and (max-width: 1200px){
 		font-size: 16px;
+		text-align: left;
 	}
 
 	@media only screen and (max-width: 767px){
@@ -155,7 +158,7 @@ to {height:100%;}
 .item{
 	width:31.58%;
 	margin:0 0 20px;
-	padding:20px 0 0;
+	padding:40px 0 0;
 	overflow:hidden;
 	position: relative;
 	@media only screen and (max-width: 767px){
@@ -219,6 +222,9 @@ to {height:100%;}
 	font-size:24px;
 	line-height:27px;
 	align-self:flex-end;
+	@media only screen and (max-width: 767px){
+			display: none;
+		}
 	& a{
 		display: inline;
 		padding:0 7px 5px;

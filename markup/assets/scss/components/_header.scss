@@ -8,6 +8,9 @@
     @media only screen and (max-width: 1530px){
         padding:0 20px;
     }
+    @media only screen and (max-width: 767px){
+    	padding:0 10px;
+    }
 }
 @-webkit-keyframes search_form {
 from {right:-100px;}
@@ -99,7 +102,7 @@ to {right:45px;}
 	display:none;
 	float:left;
 	width:56px;
-	height:58px;
+	height:36px;
 	margin:12px 0 0;
 	position: relative;
 	text-indent:-9999px;
