@@ -94,6 +94,7 @@ $font-size-table-mobile: ceil(($font-size-base * 1.14)) !default; // ~16px
 			    				@media screen and (max-width: 657px){
 			    					font-size: $font-size-md;
 			    					text-align: right;
+			    					margin-bottom: 0;
 			    				}
 			    			}
 			    		}
@@ -172,6 +173,9 @@ $font-size-table-mobile: ceil(($font-size-base * 1.14)) !default; // ~16px
 					@media screen and (max-width: 1022px){
 						display: block;
 					}
+				}
+				a{
+					text-decoration: none;
 				}
 			}
 		}

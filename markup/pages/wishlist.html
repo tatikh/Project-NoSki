@@ -3,154 +3,156 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Project_NOSKI</title>
+	<title>Wishlist</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="assets/js/jquery.fs.stepper.js"></script>
-	<link href="assets/css/jquery.fs.stepper.css" rel="stylesheet" type="text/css">
+	<script src="../assets/js/assets.js"></script>
+	<script src="../assets/js/jquery.fs.stepper.js"></script>
+	<link href="../assets/css/jquery.fs.stepper.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/all.css">
 </head>
 <body>
 <div class="wrapper">
-<header class="header">
-	<div class="container header-holder">
-		<div class="logo_block">
-			<a href=""><img src="assets/images/logo.svg" alt="logo" class="logo"></a>
+	<header class="header">
+		<div class="container header-holder">
+			<div class="logo_block">
+				<a href="../index.html">
+					<img src="../assets/images/logo.svg" alt="logo" class="logo"></a>
+			</div>
+			<nav id="nav">
+				<a href="" class="opener">
+					<span>MENU</span>
+				</a>
+				<div class="drop">
+					<ul>
+						<li>
+							<a href="">About</a>
+						</li>
+						<li>
+							<a href="product_grid.html">Store</a>
+						</li>
+						<li>
+							<a href="">Lookbook</a>
+						</li>
+						<li>
+							<a href="">Contact</a>
+						</li>
+						<li>
+							<a href="">Login</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<ul class="icons_block">
+				<li class="search_box">
+					<input type="checkbox" id="search">
+					<label for="search"> <i class="icon-search"></i>
+					</label>
+					<input type="text" name="search_form" id="search_form" placeholder="Search"></li>
+				<li>
+					<a href="wishlist.html"> <i class="icon-wishlist"></i>
+					</a>
+				</li>
+				<li class="cart-icon">
+					<a href="cart.html">
+						<i class="icon-cart"></i>
+						<span class="count_number">1</span>
+					</a>
+				</li>
+			</ul>
 		</div>
-		<nav id="nav">
-			<a href="" class="opener"><span>MENU</span></a>
-			<div class="drop">
-				<ul>
-					<li><a href="">About</a></li>
-					<li><a href="">Store</a></li>
-					<li><a href="">Lookbook</a></li>
-					<li><a href="">Contact</a></li>
-					<li><a href="">Login</a></li>
-				</ul>
-			</div>
-		</nav>
-		<ul class="icons_block">
-			<li class="search_box">
-				<input type="checkbox" id="search">
-				<label for="search"><i class="icon-search"></i></label>
-				<input type="text" name="search_form" id="search_form">
-			</li>
-			<li><a href=""><i class="icon-wishlist"></i></a></li>
-			<li><a href=""><i class="icon-cart path1"></i></a></li>
-		</ul>
-	</div>
-</header>
-
-<main class="main">
-<!-- ----------------Wish list-------------------- -->
-	<div class="container">
-		<div class="table-body">
-			<div class="table-head">
-				<div class="icon-holder"><span class="icon-wishlist"></span></div>
-				<span class="heading">Wish list</span>
-			</div>
-			<div class="table-row">
-				<div class="table-image"><img src="assets/images/sock.jpg" height="347" width="347" alt="sock"></div>
-				<div class="table-middle">	
-					<div class="table-descr">	
-						<div class="product-name"><span class="collection">Forever 21</span><span class="sock-name">Lemon-pattern ankle sock</span></div>
-						<!-------------- Stepper ------------>
-						<div class="middle-descr">
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="table-body">
+				<div class="table-head">
+					<div class="icon-holder"><span class="icon-wishlist"></span></div>
+					<span class="heading">Wish list</span>
+				</div>
+				<div class="table-row">
+					<div class="table-image"><img src="../assets/images/sock.jpg" height="347" width="347" alt="sock"></div>
+					<div class="table-middle">	
+						<div class="table-descr">	
+							<div class="product-name"><span class="collection">Forever 21</span><span class="sock-name">Lemon-pattern ankle sock</span></div>
+							<div class="middle-descr">
 								<input class="stepper" type="number" value="1" min="1" class="stepper-input">
+							</div>
+							<div class="table-price">$1.50</div>
 						</div>
-						<!-- ---------------End of Stepper---------------- -->
-						<div class="table-price">$1.50</div>
+					</div>
+					<div class="table-btn">
+						<a href="#" class="button button-cart link-notunderline">Add to cart</a>
+						<a href="#" class="cart-mobile"><span class="icon icon-cart"></span></a>
 					</div>
 				</div>
-				<div class="table-btn">
-					<a href="#" class="button button-cart link-notunderline">Add to cart</a>
-					<a href="#" class="cart-mobile"><span class="icon icon-cart"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a>
-				</div>
-			</div>
-			<div class="table-row">
-				<div class="table-image table-left"><img src="assets/images/sock2.jpg" height="347" width="347" alt="sock"></div>
-				<div class="table-middle">
-					<div class="table-descr">	
-						<div class="product-name"><span class="collection">Forever 21</span><span class="sock-name">Cat-pattern ankle sock</span></div>
-						<div class="middle-descr">
-								<input class="stepper" type="number" value="1" min="1" class="stepper-input">
+				<div class="table-row">
+					<div class="table-image table-left"><img src="../assets/images/sock2.jpg" height="347" width="347" alt="sock"></div>
+					<div class="table-middle">
+						<div class="table-descr">	
+							<div class="product-name"><span class="collection">Forever 21</span><span class="sock-name">Cat-pattern ankle sock</span></div>
+							<div class="middle-descr">
+									<input class="stepper" type="number" value="1" min="1" class="stepper-input">
+							</div>
+							<div class="table-price">$1.50</div>
 						</div>
-						<div class="table-price">$1.50</div>
+					</div>
+					<div class="table-btn">
+						<a href="#" class="button button-cart link-notunderline">Add to cart</a>
+						<a href="#" class="cart-mobile"><span class="icon icon-cart"></span><span class="path3"></span></span></a>
 					</div>
 				</div>
-				<div class="table-btn">
-					<a href="#" class="button button-cart link-notunderline">Add to cart</a>
-					<a href="#" class="cart-mobile"><span class="icon icon-cart"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a>
-				</div>
-			</div>
-			<div class="table-row">
-				<div class="table-image table-left"><img src="assets/images/sock3.jpg" height="347" width="347" alt="sock"></div>
-				<div class="table-middle">
-					<div class="table-descr">	
-						<div class="product-name"><span class="collection">Forever 21</span><span class="sock-name">Seashell ankle sock</span></div>
-						<div class="middle-descr">
-								<input class="stepper" type="number" value="1" min="1" class="stepper-input">
+				<div class="table-row">
+					<div class="table-image table-left"><img src="../assets/images/sock3.jpg" height="347" width="347" alt="sock"></div>
+					<div class="table-middle">
+						<div class="table-descr">	
+							<div class="product-name"><span class="collection">Forever 21</span><span class="sock-name">Seashell ankle sock</span></div>
+							<div class="middle-descr">
+									<input class="stepper" type="number" value="1" min="1" class="stepper-input">
+							</div>
+							<div class="table-price">$1.50</div>
 						</div>
-						<div class="table-price">$1.50</div>
 					</div>
-				</div>
-				<div class="table-btn">
-					<a href="#" class="button button-cart link-notunderline">Add to cart</a>
-					<a href="#" class="cart-mobile"><span class="icon icon-cart"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a>
+					<div class="table-btn">
+						<a href="#" class="button button-cart link-notunderline">Add to cart</a>
+						<a href="#" class="cart-mobile"><span class="icon icon-cart"></span></a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- ---------------End of Wish list--------------------- -->
-
-</main>
-
- <footer>
-        <div class="footer">
-            <div class="container">
-            <div class="footer-holder">
-                <div class="footer-inner">
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Store</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">FAQ's</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Shipping Info</a></li>
-                        <li><a href="">Privacy &amp; Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-inner">
-                    <form>
-                        <div class="form_group">
-                            <label class="form_label" for="">Newsletters</label>
-                            <input type="email" class="form_input" id="InputEmail1" placeholder="E-mail">
-                            <button type="submit" class="btn-submit"><span class="icon icon-arrow-right2"></span></button>
-                        </div>
-                    </form>
-                </div>
-                <div class="footer-inner">
-                    <div class="footer-social-list">
-                        <ul>
-                            <li><a href="#"><span class="icon icon-facebook"></span></a></li>
-                            <li><a href="#"><span class="icon icon-google"></span></a></li>
-                            <li><a href="#"><span class="icon icon-twitter"></span></a></li>
-                            <li><a href="#"><span class="icon icon-instagram"></span></a></li>
-                            <li><a href="#"><span class="icon icon-pinterest"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
+	</main>
+	<footer class="footer">
+        <div class="footer-holder container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="product_grid.html">Store</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">FAQ's</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Shipping Info</a></li>
+                    <li><a href="">Privacy &amp; Policy</a></li>
+                </ul>
             </div>
+            <div class="follow-block">
+                <form>
+                    <label for="InputEmail">Newsletters</label>
+                    <span class="fake-input"><input type="email" class="input-inverse" id="InputEmail" placeholder="E-mail">
+                    <button type="submit" class="btn-submit"><i class="icon icon-arrow-right2"></i></button></span>
+                </form>
             </div>
-            <div class="container">
+            <ul class="social-networks">
+                <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon icon-google"></span></a></li>
+                <li><a href="#"><span class="icon icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon icon-pinterest"></span></a></li>
+            </ul>
+            </div>
             <div class="copyright">
-                <hr>
                 <p>Copyright © 2015 Nosockstore All Rights Reserved</p>
             </div>
-            </div>
-        </div>
     </footer>
 	</div>
 <!-- Stepper -->

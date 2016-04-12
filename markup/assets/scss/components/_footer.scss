@@ -9,7 +9,7 @@
         justify-content: space-between;
         align-items:center;
         color: #fff;
-        margin:0 0 75px;
+        margin:0 auto 75px;
 
         @media only screen and (max-width: 767px){
             display: flex;
@@ -76,6 +76,7 @@
             background: transparent;
             border-bottom:1px solid #fff;
             height: 40px;
+            position: relative;
             @media only screen and (max-width: 898px){
                 width: 100%;
             }
@@ -95,6 +96,9 @@
                 color: #fff;
                 border: none;
                 background: transparent;
+                position: absolute;
+                right: -5px;
+                bottom: 17%;
             }
         }
     & label{
