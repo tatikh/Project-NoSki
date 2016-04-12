@@ -6,6 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>UA-TanyaProject_NOSKI</title>
 	<script type="text/javascript" src="../assets/js/assets.js"></script>
+<!-- 	// <script type="text/javascript" src="../assets/js/plugins/jquery-1.8.3.min.js"></script>
+	// <script type="text/javascript" src="../assets/js/plugins/jquery.elevateZoom-3.0.8.min.js"></script>
+	// <script type="text/javascript" src="../assets/js/plugins/jquery.elevatezoom.js"></script> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link href="../assets/css/jquery.fs.stepper.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/all.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-touch-icon-60x60.png">
@@ -22,12 +27,12 @@
 	<link rel="icon" type="image/png" href="../assets/images/favicons/android-chrome-192x192.png" sizes="192x192">
 	<link rel="icon" type="image/png" href="../assets/images/favicons/favicon-16x16.png" sizes="16x16"></head>
 </head>
-<body>
-	<div class="wrapper">
+<body id="product-page">
+	<div class="wrapper center-block">
 		<header class="header">
 			<div class="container header-holder">
 				<div class="logo_block">
-					<a href="">
+					<a href="../index.html">
 						<img src="../assets/images/logo.svg" alt="logo" class="logo"></a>
 				</div>
 				<nav id="nav">
@@ -74,7 +79,7 @@
 			</div>
 		</header>
 
-		<div class="container-pr center-block">
+		<div class="content-product center-block">
 			<ul class="sidebar">
 				<li>
 					<label for="link1">Men</label>
@@ -116,6 +121,7 @@
 					<label for="link3">Kids</label>
 					<input id="link3" class="link_toggle" type="radio" name="accordion-01"></ul>
 
+			<div class="product-block">
 				<ul class="breadcrumb">
 					<li>
 						<a href="#">Store</a>
@@ -128,10 +134,9 @@
 					</li>
 					<li class="active">Crab Pattern Ankle Socks</li>
 				</ul>
-				<div class="product">
-
+				<div class="product-card">
 					<div class="product-gallery">
-						<img id="zoom_07" src="../assets/images/content/product-photo1.jpg" data-zoom-image="assets/images/content/product-photo1.jpg"></div>
+						<img id="zoom_07" src="../assets/images/content/product-photo1.jpg" data-zoom-image="../assets/images/content/product-photo1.jpg"></div>
 					<div class="description">
 						<div class="description-info center block">
 							<h4 class="product-name h4">Crab Pattern Ankle Socks</h4>
@@ -149,89 +154,118 @@
 									<li class="colorlist-lightblue"></li>
 								</ul>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<footer>
-				<div class="footer">
-					<div class="footer-holder">
-						<div class="footer-inner">
-							<ul>
-								<li>
-									<a href="">About</a>
-								</li>
-								<li>
-									<a href="">Store</a>
-								</li>
-							</ul>
-							<ul>
-								<li>
-									<a href="">Contact</a>
-								</li>
-								<li>
-									<a href="">FAQ's</a>
-								</li>
-							</ul>
-							<ul>
-								<li>
-									<a href="">Shipping Info</a>
-								</li>
-								<li>
-									<a href="">Privacy &amp; Policy</a>
-								</li>
-							</ul>
-						</div>
-						<div class="footer-inner">
-							<form>
-								<div class="form_group">
-									<label for="">Newsletters</label>
-									<input type="email" class="form_control" id="InputEmail1" placeholder="E-mail">
-									<button type="submit" class="btn-submit">
-										<span class="icon icon-arrow-right2"></span>
-									</button>
+							<div class="step">
+								<input class="stepper" type="number" value="1" min="1" class="stepper-input">
+							</div>
+							<div class="buttons">
+								<div class="table-btn">
+									<a href="#" class="button button-cart link-notunderline">Add to cart</a>
 								</div>
-							</form>
-						</div>
-						<div class="footer-inner">
-							<div class="footer-social-list">
-								<ul>
-									<li>
-										<a href="#">
-											<span class="icon icon-facebook"></span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span class="icon icon-google"></span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span class="icon icon-twitter"></span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span class="icon icon-instagram"></span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span class="icon icon-pinterest"></span>
-										</a>
-									</li>
-								</ul>
+								<div class="table-btn">
+									<a href="#" class="button button-wish link-notunderline"><i class="icon-wishlist"></i></a>			
+								</div>
 							</div>
 						</div>
 					</div>
-					<hr>
-					<div class="copyright">
-						<p>Copyright © 2015 Nosockstore All Rights Reserved</p>
-					</div>
 				</div>
-				<button class="draw">lknflksnfksjfvkj</button>
-			</footer>
-</body>
-		</html>
+		<div class="bottom_gallery">
+            <h1>You might also like</h1>
+            <div class="gallery_holder">
+                <div class="product_list">
+                    <p class="product_list_name">FOREVER 18</p>
+                    <img src="../assets/images/sock.jpg" alt="" class="product_list_image img-responsive">
+                    <p class="product_list_price">$1.50</p>
+                    <div class="product_list_icon">
+                        <ul>
+                            <li><a href=""><span class="icon-cart"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></li>
+                            <li><a href=""><span class="icon-wishlist"></span></a></li>
+                        </ul>
+                    </div>
+                    <p class="product_list_desc">Abstract Snowflake Ankle Socks</p>
+                </div>
+                <div class="product_list">
+                    <p class="product_list_name">FOREVER 19</p>
+                    <img src="../assets/images/sock2.jpg" alt="" class="product_list_image img-responsive">
+                    <p class="product_list_price">$1.99</p>
+                    <div class="product_list_icon">
+                        <ul>
+                            <li><a href=""><span class="icon-cart"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></li>
+                            <li><a href=""><span class="icon-wishlist"></span></a></li>
+                        </ul>
+                    </div>
+                    <p class="product_list_desc">Abstract Snowflake Ankle Socks</p>
+                </div>
+                <div class="product_list">
+                    <p class="product_list_name">FOREVER 20</p>
+                    <img src="../assets/images/sock3.jpg" alt="" class="product_list_image img-responsive">
+                    <p class="product_list_price">$1.99</p>
+                    <div class="product_list_icon">
+                        <ul>
+                            <li><a href=""><span class="icon-cart"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></li>
+                            <li><a href=""><span class="icon-wishlist"></span></a></li>
+                        </ul>
+                    </div>
+                    <p class="product_list_desc">Abstract Snowflake Ankle Socks</p>
+                </div>
+                <div class="product_list">
+                    <p class="product_list_name">FOREVER 21</p>
+                    <img src="../assets/images/sock4.jpg" alt="" class="product_list_image img-responsive">
+                    <p class="product_list_price">$1.50</p>
+                    <div class="product_list_icon">
+                        <ul>
+                            <li><a href=""><span class="icon-cart"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></li>
+                            <li><a href=""><span class="icon-wishlist"></span></a></li>
+                        </ul>
+                    </div>
+                    <p class="product_list_desc">Abstract Snowflake Ankle Socks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+	</div> 
+
+<footer class="footer">
+    <div class="container-lg">
+            <div class="footer-holder">
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Store</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Privacy &amp; Policy</a></li>
+                    </ul>
+                </div>
+                <div class="follow-block">
+                    <form>
+                        <label for="InputEmail">Newsletters</label>
+                        <span class="fake-input"><input type="email" class="input-inverse" id="InputEmail" placeholder="E-mail">
+                        <button type="submit" class="btn-submit"><i class="icon icon-arrow-right2"></i></button></span>
+                    </form>
+                </div>
+                <ul class="social-networks">
+                    <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+                    <li><a href="#"><span class="icon icon-google"></span></a></li>
+                    <li><a href="#"><span class="icon icon-twitter"></span></a></li>
+                    <li><a href="#"><span class="icon icon-instagram"></span></a></li>
+                    <li><a href="#"><span class="icon icon-pinterest"></span></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2015 Nosockstore All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+		<script>
+			$(document).ready(function() {
+				$("#zoom_07").elevateZoom({ zoomType	: "lens", lensShape : "round", lensSize : 200 }); 
+			});
+		</script>
+	</body>
+</html>
