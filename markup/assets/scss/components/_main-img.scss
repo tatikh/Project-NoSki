@@ -1,6 +1,12 @@
 @import 'mixins/main-block-img';
 @import 'mixins/name-collection';
 
+i[class^="icon-"] {
+	 	&:hover {
+			color: #f36a3c;
+		}
+	}
+ 
 .main
 {
 	min-width: 320px;
@@ -20,6 +26,9 @@
 		max-width: none;
 		position: relative;
 		left: -63%;
+		// position: relative;
+		// left: 50%; 
+		// transform: translateX(-50%);
 	}
 	@media (min-width: 460px)  {
 		&-img-central {
@@ -90,7 +99,6 @@
 	}
 	&-middle-top{
 		@include main-block-img  ($width: 50.3%, $left: 0, $margin-top: -50%);
-		margin-bottom: 3.5%;
 		@media (min-width: 870px)  {
 			@include main-block-img  ($width: 27.49%, $left: 0, $margin-top: -23.3%);
 		}
@@ -105,7 +113,15 @@
 
 .collection{
 	&-middle {
-		margin-bottom: 40px;		
+		margin-bottom: 48px;		
+	}
+	&-bottom{
+		margin-bottom: 40px;	
+	}
+	@media (min-width: 870px)  {
+		&-middle {
+			margin-bottom: 0;		
+		}
 	}
 	position: relative;
 }
