@@ -130,28 +130,28 @@ i[class^="icon-"] {
 	@include name-collection;
 	line-height: 30px;
 		&-top{
-			@include name-collection-variant (58.1%,53.5%);
+			@include name-collection-variant ($top: 58.1%, $left: 53.5%);
 		}
 		&-middle{
 			width: 124px;
 			text-align: left;
 			line-height: 1.1;
 			margin-top: 8px;
-			@include name-collection-variant (83.6%,55.8%);
+			@include name-collection-variant ($top: 83.6%, $left: 55.8%);
 		}
 		&-bottom{
-			@include name-collection-variant (78.6%,0);
+			@include name-collection-variant ($top: 78.6%, $left: 0);
 		}
 	@media (min-width: 460px)  {
 		@include name-collection;
 			&-top{
-				@include name-collection-variant (60.9%,54.7%);
+				@include name-collection-variant ($top: 60.9%, $left: 54.7%);
 			}
 			&-middle{
-				@include name-collection-variant (83.6%,55.8%);
+				@include name-collection-variant ($top: 83.6%, $left: 55.8%);
 			}
 			&-bottom{
-				@include name-collection-variant (78.56%,11%);
+				@include name-collection-variant ($top: 78.56%, $left: 11%);
 			}
 	}
 	@media (min-width: 748px)  {
@@ -162,31 +162,31 @@ i[class^="icon-"] {
 		font-size: $font-size-h4;
 		@include name-collection;
 			&-top{
-				@include name-collection-variant (60.9%,54.7%);
+				@include name-collection-variant ($top: 60.9%, $left: 54.7%);
 			}
 			&-middle{
-				@include name-collection-variant (49.3%,40.8%);
+				@include name-collection-variant ($top: 49.3%, $left: 40.8%);
 			}
 			&-bottom{
-				@include name-collection-variant (84.56%,43.5%);
+				@include name-collection-variant ($top: 84.56%, $left: 43.5%);
 			}
 	}
 	@media (min-width: 992px)  {
 		@include name-collection;
 			&-top{
-				@include name-collection-variant (40.9%,49.7%);
+				@include name-collection-variant ($top: 40.9%, $left: 49.7%);
 			}
 			&-middle{
-				@include name-collection-variant (49.3%,40.8%);
+				@include name-collection-variant ($top: 49.3%, $left: 40.8%);
 			}
 			&-bottom{
-				@include name-collection-variant (74.56%,43.5%);
+				@include name-collection-variant ($top: 74.56%, $left: 43.5%);
 			}
 	}
 	@media (min-width: 1208px)  {
 		@include name-collection;
 			&-top{
-				@include name-collection-variant (40.9%,54.7%);
+				@include name-collection-variant ($top: 40.9%, $left: 54.7%);
 			}
 	}
 }
