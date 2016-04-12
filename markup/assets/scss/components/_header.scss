@@ -2,7 +2,13 @@
 .wrapper{
 	overflow: hidden;
 }
-
+.container-lg{
+    max-width: 1530px;
+    margin: 0 auto;
+    @media only screen and (max-width: 1530px){
+        padding:0 20px;
+    }
+}
 @-webkit-keyframes search_form {
 from {right:-100px;}
 to {right:45px;}
@@ -11,13 +17,6 @@ to {right:45px;}
 @keyframes search_form {
 from {right:-100px;}
 to {right:45px;}
-}
-.container{
-	max-width:1530px;
-	margin:0 auto;
-	@media only screen and (max-width: 1530px){
-		padding:0 21px;
-	}
 }
 .header{
 	padding:63px 0 61px;

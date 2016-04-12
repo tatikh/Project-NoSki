@@ -1,3 +1,10 @@
+.container-lg{
+    max-width: 1530px;
+    margin: 0 auto;
+    @media only screen and (max-width: 1530px){
+        padding:0 20px;
+    }
+}
 .footer {
     background: $black-base;
     padding:90px 0 37px;
@@ -16,11 +23,6 @@
             flex-direction: column;
             margin: 0 0 20px;
         }
-    }
-    & hr{
-        border-color: rgba(255,255,255,0.78);
-        border-width:0.5px;
-        margin:0;
     }
 }
 .footer-links{
@@ -77,7 +79,7 @@
         }
         & .fake-input {
             display: inline-block;
-            width: 56.3%;
+            width: 50%;
             background: transparent;
             border-bottom:1px solid #fff;
             height: 40px;
@@ -164,10 +166,15 @@
         content: '';
         position: absolute;
         top:0;
-        left:-9999px;
-        right:-9999px;
+        left:0;
+        right:0;
         height: 1px;
+        width:100%;
         background: rgba(255,255,255,0.78);
+         @media only screen and (max-width: 767px){
+            left:-9999px;
+            right: -9999px;
+         }
             
     }
     & p{
