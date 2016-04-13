@@ -21,30 +21,14 @@ i[class^="icon-"] {
 	}
 
 	&-img-central {
-		height: 414px;
+		height: auto;
 		width: auto;
 		max-width: none;
 		position: relative;
-		left: -63%;
-		// position: relative;
-		// left: 50%; 
-		// transform: translateX(-50%);
+		left: 50%; 
+		transform: translateX(-50%);
 	}
-	@media (min-width: 460px)  {
-		&-img-central {
-			left: -59%;
-		}
-	}
-	@media (min-width: 550px)  {
-		&-img-central {
-			left: -31%;
-		}
-	}
-	@media (min-width: 750px)  {
-		&-img-central {
-			left: -17%;
-		}
-	}
+
 
 	@media (min-width: 870px)  {
 		max-width: 1920px;
@@ -62,12 +46,7 @@ i[class^="icon-"] {
 			margin-bottom: 16.36%; //250px
 			overflow: inherit;
 		}
-		&-img-central {
-			max-width: 100%;
-			height: auto;
-			left: 0;
-			position: static;
-		}
+
 		&-block{
 			padding-bottom: 11.71%; //179px
 				.h1{

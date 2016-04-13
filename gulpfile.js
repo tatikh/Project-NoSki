@@ -17,7 +17,7 @@ var dist = './dist';
 var markupPaths = {
     html: [markup + '/**/*.html'],
     js: [markup + '/assets/js/**/*.js'],
-    scss: [markup + '/assets/scss/**/*.scss'],
+    scss: [markup + '/assets/scss/**/*.+(scss|css)'],
     fonts: [markup + '/assets/fonts/**/*.*'],
     image:[markup + '/assets/images/**/*.+(png|jpg|svg)']
 }
