@@ -6,11 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>UA-TanyaProject_NOSKI</title>
 	<script type="text/javascript" src="../assets/js/assets.js"></script>
-<!-- 	// <script type="text/javascript" src="../assets/js/plugins/jquery-1.8.3.min.js"></script>
-	// <script type="text/javascript" src="../assets/js/plugins/jquery.elevateZoom-3.0.8.min.js"></script>
-	// <script type="text/javascript" src="../assets/js/plugins/jquery.elevatezoom.js"></script> -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<link href="../assets/css/jquery.fs.stepper.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/all.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-touch-icon-60x60.png">
@@ -100,10 +95,10 @@
 					</ul>
 				</li>
 				<li>
-					<label for="link2">WoMen</label>
+					<label for="link2">Women</label>
 					<input id="link2" class="link_toggle" type="radio" name="accordion-01">
 					<ul class="dropdown">
-						<li>
+						<li class="active">
 							<a href="">ankle</a>
 						</li>
 						<li>
@@ -136,7 +131,10 @@
 				</ul>
 				<div class="product-card">
 					<div class="product-gallery">
-						<img id="zoom_07" src="../assets/images/content/product-photo1.jpg" data-zoom-image="../assets/images/content/product-photo1.jpg"></div>
+						<div class="product-item"><img  id="zoom_01" src="../assets/images/content/product-photo1.jpg" data-zoom-image="../assets/images/content/product-photo1.jpg"></div>
+						<div class="product-item"><img id="zoom_02" src="../assets/images/content/product-photo1.jpg" data-zoom-image="../assets/images/content/product-photo1.jpg"></div>
+						<div class="product-item"><img id="zoom_03" src="../assets/images/content/product-photo1.jpg" data-zoom-image="../assets/images/content/product-photo1.jpg"></div>
+					</div>
 					<div class="description">
 						<div class="description-info center block">
 							<h4 class="product-name h4">Crab Pattern Ankle Socks</h4>
@@ -155,6 +153,7 @@
 								</ul>
 							</div>
 							<div class="step">
+								<span>Quantity</span>
 								<input class="stepper" type="number" value="1" min="1" class="stepper-input">
 							</div>
 							<div class="buttons">
@@ -224,7 +223,6 @@
     </div>
 	</div>
 	</div> 
-
 <footer class="footer">
     <div class="container-lg">
             <div class="footer-holder">
@@ -262,10 +260,27 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+    	$('.product-gallery').owlCarousel({
+    		items:1,
+		    loop:true,
+		    responsiveClass:true,
+		    nav:true
+})
+    </script>
 		<script>
-			$(document).ready(function() {
-				$("#zoom_07").elevateZoom({ zoomType	: "lens", lensShape : "round", lensSize : 200 }); 
-			});
+	$(document).ready(function() {
+		$("input[type='number']").stepper({
+			customClass: "stepper",
+			labels: {
+			up: "+",
+			down: "-",
+			}
+		});
+	});
+</script>
+<script>
+	$("#zoom_01").elevateZoom({ zoomType	: "inner", cursor: "crosshair" }); 
 		</script>
 	</body>
 </html>

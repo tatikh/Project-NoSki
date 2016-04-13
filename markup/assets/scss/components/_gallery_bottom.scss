@@ -1,8 +1,13 @@
 .bottom_gallery {
-   
+   @media only screen and (max-width: 767px){
+        text-align: center;
+    }
    h1 {
         font-size: 35px;
         margin-top: 15px;
+        @media only screen and (max-width: 767px){
+            font-size: 18px;
+        }
     }
 }
 
